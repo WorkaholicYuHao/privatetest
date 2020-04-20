@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习时长两年半的练习生</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="mainHeader">
+        </div>
+        <div class="mainContent">
+            <button onclick="clickMe()">点我</button>
+            <div id="iii"></div>
+            <input id="inText"/>
+            <button onclick="inTclick()">输入框点击</button>
+            <button onclick="copyClick()">覆盖掉</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.write("<h1>我是新加入的头部</h1>")
+    document.write("<h2>我是新的第二个</h2>")
+    let iii = document.getElementById('iii')
+    let inText = document.getElementById('inText')
+    iii.innerHTML="来了"
+    clickMe=()=>{
+        iii.style.color="red";
+    }
+    inTclick=()=>{
+        if(inText==''||isNaN(inText)) alert(inText.value)
+    }
+    copyClick=()=>{
+        document.write('sdsdsds')
+    }
+</script>
+</html>
